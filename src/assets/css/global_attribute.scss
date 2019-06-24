@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@mixin wh($width, $height){width: $width; height: $height;}
+@mixin bg-image($url){background-image: url($url); background-size: 100% 100%;}
+@mixin allow-right{
+	border: solid 2px #c8c8cd;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    content: "";
+    top:50%;
+    right:15px;
+    position: absolute;
+    width:5px;
+    height:5px;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+            transform: translateY(-50%) rotate(45deg);	
+}
+@mixin hr($height){background:#f6f6f6;height:$height;width:100%;}
+@mixin font($size){
+    transform: scale($size);
+    transform-origin:0 0;
+     -ms-transform: scale($size);         
+     -ms-transform-origin:0 0;      
+     -webkit-transform: scale($size); 
+     -webkit-transform-origin:0 0;  
+     -moz-transform: scale($size); 
+     -moz-transform-origin:0 0; 
+     -o-transform: scale($size);      
+     -o-transform-origin:0 0;        
+}
